@@ -1,0 +1,6 @@
+marvelcomicsapi.admin:
+  title: 'Marvel Comics API'
+  description: 'Settings and configuration.'
+  parent: system.admin_config_development
+  route_name: marvelcomicsapi.settings
+  weight: 100

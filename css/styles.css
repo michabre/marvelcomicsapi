@@ -1,0 +1,51 @@
+/* Finder */
+#marvelcomicsapi-finder article.details {
+    display: flex;
+}
+#marvelcomicsapi-finder article.details .columns {
+    width: 50%;
+}
+
+/* Overrides */
+.section {
+    padding: 0;
+}
+
+#marvelcomicsapi-comparison .button {
+    background-image: none;
+    border: none;
+}
+
+#marvelcomicsapi-comparison button.get-character {
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+#marvelcomicsapi-comparison .listing {
+    list-style: none;
+    margin-top: 0;
+}
+
+#marvelcomicsapi-comparison .listing li {
+    border-bottom: 1px solid #ccc;
+    padding: 0.25rem 0;
+}
+
+#marvelcomicsapi-comparison #appearances .results {
+    padding: 0.5rem 0;
+}
+
+#marvelcomicsapi-comparison figure {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#marvelcomicsapi-comparison .card .card-content ul {
+    list-style: none;
+    margin-left: 0;
+}
+
+#marvelcomicsapi-comparison .card .card-content ul li {
+    display: inline-block;
+    margin-right: 1rem;
+}

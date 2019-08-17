@@ -1,0 +1,5 @@
+name: 'Marvel Comics API'
+type: module
+description: 'Connect to the Marvel Comics API and request info on characters, comics, authors, series, etc.'
+core: 8.x
+package: 'Marvel Comics'

@@ -1,0 +1,13 @@
+{
+    "name": "marvelcomicsapi",
+    "type": "drupal-module",
+    "description": "Now you're playing with Marvel Comics",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/marvelcomicsapi",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/marvelcomicsapi",
+        "source": "http://cgit.drupalcode.org/marvelcomicsapi"
+    }
+}

@@ -1,0 +1,21 @@
+base:
+  version: 1.0
+  css:
+    theme:
+      css/styles.css: {}
+  js:
+    vendor/CryptoJS/rollups/md5.js: {}
+    js/helpers.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal
+    - core/drupalSettings
+finder:
+  version: 1.0
+  js:
+    js/finder.js: {}
+comparison:
+  version: 1.0
+  js:
+    js/comparison.js: {}

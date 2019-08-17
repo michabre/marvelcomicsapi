@@ -1,0 +1,36 @@
+marvelcomicsapi.settings:
+  path: '/admin/config/marvelcomicsapi/settings'
+  defaults:
+    _title: 'Marvel Comics API Settings'
+    _form: '\Drupal\marvelcomicsapi\Form\MarvelComicsAPIForm'
+  requirements:
+    _permission: 'administer site configuration'
+
+marvelcomicsapi.comparison:
+  path: '/marvelcomicsapi/shared'
+  defaults:
+    _title: 'Marvel Comics API'
+    _controller: '\Drupal\marvelcomicsapi\Controller\MarvelComicsAPIController::comparison'
+  requirements:
+    _permission: 'access content'
+  options:
+    no_cache: TRUE
+
+marvelcomicsapi.finder:
+  path: '/marvelcomicsapi/finder'
+  defaults:
+    _title: 'Marvel Comics API Character Finder'
+    _controller: '\Drupal\marvelcomicsapi\Controller\MarvelComicsAPIController::finder'
+  requirements:
+    _permission: 'access content'
+  options:
+    no_cache: TRUE
+  
+marvelcomicsapi.json_api:
+  path: '/marvelcomicsapi/json'
+  defaults:
+    _controller: 'Drupal\marvelcomicsapi\Controller\MarvelComicsAPIJsonController::returnJson'
+    _title: 'JSON api'
+  methods:  [GET]
+  requirements:
+    _access: 'TRUE'

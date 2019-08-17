@@ -1,0 +1,40 @@
+<div id="marvelcomicsapi-comparison">
+    <div class="content">
+        <p class="is-size-3">{{ summary }}</p>
+        {{ description }}
+    </div>
+
+    <div class="columns">
+        <div id="characterOne" class="column is-one-third">
+            <h4>Choose a character:</h4>
+            <div class="control">
+                <input class="input name" type="text" placeholder="{{ character1 }}">
+                <button class="button is-info get-character">Get Character</button>
+            </div>
+            <div class="results">
+            </div>
+        </div>
+
+        <div class="column is-one-third has-text-centered">
+            <h4></h4>            
+            <button class="compare-characters button is-large is-fullwidth is-dark is-capitalized has-text-weight-bold">Find Shared Appearances</button>
+            
+            <div id="appearances">
+                <div class="results">
+                </div>
+            </div>
+
+            <h6 class="is-size-7 has-text-centered"><a href="http://marvel.com">Data provided by Marvel. &copy; 2019 MARVEL</a></h6>
+        </div>
+
+        <div id="characterTwo" class="column is-one-third">
+            <h4>Choose a character:</h4>
+            <div class="control">
+                <input class="input name" type="text" placeholder="{{ character2 }}">
+                <button class="button is-info get-character">Get Character</button>
+            </div>
+            <div class="results">
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,3 @@
+services:
+  marvelcomicsapi_service:
+      class: Drupal\marvelcomicsapi\Service\MarvelComicsAPIService

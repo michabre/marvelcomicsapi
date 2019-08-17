@@ -1,0 +1,67 @@
+<?php
+
+/**
+ * @file
+ * Contains marvelcomicsapi.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ * @param $route_name
+ * @param RouteMatchInterface $route_match
+ * @return string
+ */
+function marvelcomicsapi_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the marvelcomicsapi module.
+    case 'help.page.marvelcomicsapi':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Connect to the Marvel Comics API and request info on characters, comics, authors, series, etc.') . '</p>';
+      return $output;
+    default:
+      return '';
+  }
+}
+
+/**
+ * Implements hook_theme().
+ * @return array
+ */
+function marvelcomicsapi_theme() {
+    // array of template options
+    $template_options = array(
+      // finder.html.twig
+      'finder' => array(
+        'variables' => array(
+          'description' => NULL
+        )
+      ),
+      // comparison.html.twig
+      'comparison' => array(
+        'variables' => array(
+          'character1' => 'Nick Fury',
+          'character2' => 'Black Panther',
+          'summary' => 'Summarize this module',
+          'description' => 'testing testing 1 2 3'
+        )
+      ),
+    );
+
+    return $template_options;
+}
+
+/**
+ * Implements hook_page_attachments_alter().
+ * @param $page
+ */
+function marvelcomicsapi_page_attachments_alter(&$page)
+{
+  $module_handler = \Drupal::service('module_handler');
+  $module_path = $module_handler->getModule('marvelcomicsapi')->getPath();
+  //
+  $page['#attached']['drupalSettings']['marvelComicsAPI']['path'] = $module_path;
+}
+
