@@ -1,14 +1,22 @@
 {# Marvel Comics API Finder Template #}
-<div id="marvelcomicsapi-finder">
-
-  <p>{{ description }}</p>
-
-  <form id="find-marvelcomics-character">
-    <input type="text" />
-    <button>Find Character</button>
-  </form>
-
-  <article class="details">
-  </article>
-
-</div>
+<section id="marvelcomicsapi-finder">
+  <div class="columns">
+    <div class="column is-full">
+      {{ description }}
+    </div>
+  </div>
+  <div class="columns">
+    <div class="column is-two-thirds">
+      <h4>Find a Character</h4>
+      <form id="find-marvelcomics-character" class="control">
+        <div class="field">
+          <input class="input name" type="text" placeholder="Enter the name of a character from Marvel Comics." />
+        </div>
+        <button class="button is-info">Search</button>
+      </form>
+    </div>
+    <div class="column is-one-third">
+      <article class="details"></article>
+    </div>
+  </div>
+</section>

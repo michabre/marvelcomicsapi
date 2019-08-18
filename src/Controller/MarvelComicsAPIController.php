@@ -24,7 +24,7 @@ class MarvelComicsAPIController extends ControllerBase {
   public function finder()  {
     return array(
       '#theme' => 'finder',
-      '#description' => 'Use this to find the ID of a Marvel Character',
+      '#description' => 'Find a Marvel Character and learn more about them.',
       '#attached' => array(
         'library' => array(
           $this->base_library,
