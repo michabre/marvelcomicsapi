@@ -40,7 +40,7 @@ class MarvelComicsAPIForm extends ConfigFormBase {
     $form['description'] = array(
       '#type' => 'item',
       '#title' => 'Marvel Developer Account Info',
-      '#markup' => t('Connect to the Marvel Comics API with the public and private keys associated with your account. To create an account, visit the <a href="https://developer.marvel.com/">Marvel Developer Portal</a>. Be sure to read the <a href="https://developer.marvel.com/documentation/getting_started">Getting Started</a> section.')
+      '#markup' => t('Connect to the Marvel Comics API with the public and private keys associated with your account. To create an account, visit the <a href="https://developer.marvel.com/">Marvel Comics Developer Portal</a>. Be sure to read the <a href="https://developer.marvel.com/documentation/getting_started">Getting Started</a> section.')
     );
 
     $form['access_info'] = array(
