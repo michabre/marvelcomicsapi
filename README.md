@@ -35,7 +35,6 @@ The purpose of this project is to create a collection of Marvel Comics API Servi
 
 * [Marvel Comics API](https://developer.marvel.com/documentation/generalinfo) - a RESTful service which provides methods for accessing specific resources at canonical URLs and for searching and filtering sets of resources by various criteria.
 * [GuzzleHttp](https://github.com/guzzle/guzzle) - an extensible PHP HTTP client
-* [CryptoJS](https://cryptojs.gitbook.io/docs/) - JavaScript implementations of standard and secure cryptographic algorithms
 
 ## Authors
 
